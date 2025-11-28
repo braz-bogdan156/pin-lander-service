@@ -153,9 +153,9 @@ json
 Middleware:
 
 
-if (req.query.p !== process.env.REQUIRED_P_KEY) {
-    return res.redirect("https://google.com");
-}
+  if (!p || p !== REQUIRED_P_KEY) {
+    return res.redirect('https://google.com');
+  }
 🌍 Локалізація
 Файли:
 
